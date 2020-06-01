@@ -1,0 +1,132 @@
+@font-face {
+  src: url("../fonts/OrangeJuice-vXl7.ttf");
+  font-family: logo;
+}
+
+@font-face {
+  src: url("../fonts/FruitSale.ttf");
+  font-family: titulo;
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+}
+
+/*HEADER*/
+nav {
+  background-color: white;
+}
+
+nav div.container div.navbar-header a {
+  font-size: 24px;
+  font-family: logo;
+  color: rgb(43, 165, 39);
+}
+
+nav div.container div.navbar-header button span {
+  background-color: rgb(43, 165, 39);
+}
+
+div#navbar div ul {
+  display: flex;
+}
+
+div#navbar div ul li {
+  margin-left: 5%;
+  margin-top: 10%;
+  font-size: 16px;
+  font-family: logo;
+}
+
+div#navbar div ul li a {
+  color: rgb(43, 165, 39);
+}
+
+div#navbar div ul li a:hover {
+  color: rgb(13, 70, 11);
+}
+
+/* Main */
+div.jumbotron {
+  background-color: green;
+  font-family: titulo;
+
+  text-align: center;
+}
+
+div.jumbotron h1 {
+  font-size: 80px;
+  color: white;
+}
+
+div.jumbotron p {
+  font-size: 36px;
+  color: white;
+}
+
+div.jumbotron p a {
+  background-color: white;
+
+  color: green;
+  font-size: 24px;
+}
+
+/* Section */
+
+/*TRUCK*/
+div.container div.row div.truck {
+  text-align: center;
+  font-family: titulo;
+}
+
+div.container div.row div.truck p {
+  margin-top: 3%;
+  font-size: 24px;
+}
+
+div.container div.row div.truck p a {
+  color: rgb(89, 156, 92);
+  font-size: 32px;
+}
+
+/*AVOCADO*/
+div.container div.row div.avocado {
+  text-align: center;
+  font-family: titulo;
+}
+
+div.container div.row div.avocado p {
+  margin-top: 3%;
+  font-size: 24px;
+}
+div.container div.row div.avocado p a {
+  color: rgb(89, 156, 92);
+  font-size: 32px;
+}
+
+/*QUALITY*/
+div.container div.row div.quality {
+  text-align: center;
+  font-family: titulo;
+}
+div.container div.row div.quality p {
+  margin-top: 3%;
+  font-size: 24px;
+}
+
+div.container div.row div.quality p a {
+  color: rgb(89, 156, 92);
+  font-size: 32px;
+}
+
+footer {
+  color: rgb(89, 156, 92);
+}

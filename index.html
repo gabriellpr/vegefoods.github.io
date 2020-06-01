@@ -1,59 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+  <!--<![endif]-->
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>BestFood</title>
-    <link rel="stylesheet" href="./index.css" />
-    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <style>
+      body {
+        padding-top: 50px;
+        padding-bottom: 20px;
+      }
+    </style>
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
   </head>
   <body>
-    <header class="content">
-      <nav>
-        <h2>Bestfoods</h2>
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Shop</a></li>
-          <li><a href="">Blog</a></li>
-          <li><a href="">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section class="principal">
+    <nav class="navbar navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#navbar"
+            aria-expanded="false"
+            aria-controls="navbar"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Bestfoods</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <div class="navbar navbar-right">
+            <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Shop</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <!--/.navbar-collapse -->
+      </div>
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
         <h1>The best fruits on the market.</h1>
-        <p>We deliver the best organic fruits.</p>
-        <button class="btn btn-success">Show more</button>
-      </section>
-    </main>
-    <section class="content details">
-      <div>
-        <img src="./imgs/truck.png" alt="" />
-        <p>Free shipping</p>
+        <p>
+          We deliver the best organic fruits.
+        </p>
+        <p>
+          <a class="btn btn-lg" href="#" role="button">Show more &raquo;</a>
+        </p>
       </div>
-      <div>
-        <img src="./imgs/avocado.png" alt="" />
-        <p>Always Fresh</p>
-      </div>
-      <div>
-        <img src="./imgs/qualityControl.png" alt="" />
-        <p>Superior quality</p>
-      </div>
-    </section>
-    <footer>
-      <div class="content">
-        <div>
-          <p>youremail@bestfoods.com</p>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 truck">
+          <img src="./img/imgs/truck.png" alt="" />
+          <p>Free shipping</p>
+          <p>
+            <a class="btn" href="#" role="button">View details &raquo;</a>
+          </p>
         </div>
-        <div>
-          <p>155-442-3343</p>
+        <div class="col-md-4 avocado">
+          <img src="./img/imgs/avocado.png" alt="" />
+          <p>Always Fresh</p>
+          <p>
+            <a class="btn" href="#" role="button">View details &raquo;</a>
+          </p>
         </div>
-        <div>
-          <p>@bestfoods</p>
+        <div class="col-md-4 quality">
+          <img src="./img/imgs/qualityControl.png" alt="" />
+          <p>Superior quality</p>
+          <p>
+            <a class="btn" href="#" role="button">View details &raquo;</a>
+          </p>
         </div>
       </div>
-    </footer>
+
+      <hr />
+
+      <footer>
+        <p>&copy; Company BestFoods</p>
+      </footer>
+    </div>
+    <!-- /container -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+      window.jQuery ||
+        document.write(
+          '<script src="js/vendor/jquery-1.11.2.min.js"><\/script>'
+        );
+    </script>
+
+    <script src="js/vendor/bootstrap.min.js"></script>
+
+    <script src="js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function (b, o, i, l, e, r) {
+        b.GoogleAnalyticsObject = l;
+        b[l] ||
+          (b[l] = function () {
+            (b[l].q = b[l].q || []).push(arguments);
+          });
+        b[l].l = +new Date();
+        e = o.createElement(i);
+        r = o.getElementsByTagName(i)[0];
+        e.src = "//www.google-analytics.com/analytics.js";
+        r.parentNode.insertBefore(e, r);
+      })(window, document, "script", "ga");
+      ga("create", "UA-XXXXX-X", "auto");
+      ga("send", "pageview");
+    </script>
   </body>
 </html>
